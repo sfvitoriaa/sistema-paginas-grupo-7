@@ -1,24 +1,30 @@
 import PageHeader from "@/components/ui/PageHeader";
 
-/**
- * 🚧 PÁGINA DO ALUNO 4 🚧
- *
- * Esta página está aguardando implementação. Substitua todo o conteúdo
- * abaixo pelo seu conteúdo da página "Contato", seguindo o roteiro da prova.
- */
 export default function ContatoPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Aluno 4"
+        eyebrow="Fale Conosco"
         title="Contato"
-        description="Esta página ainda não foi implementada."
+        description="Preencha o formulario abaixo e entraremos em contato."
       />
-      <div className="card text-center py-12">
-        <p className="text-ink-600">
-          Aluno 4: substitua este placeholder pela sua implementação.
-        </p>
-      </div>
+
+      <form className="card max-w-xl mx-auto space-y-4">
+        <div>
+          <label className="block text-sm font-medium text-ink-800 mb-1">Nome</label>
+          <input type="text" className="input-base" placeholder="Letícia Fonseca" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-ink-800 mb-1">E-mail</label>
+          <input type="text" className="input-base" placeholder="leticia@email.com" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-ink-800 mb-1">Mensagem</label>
+          <textarea rows={4} className="input-base" placeholder="Como podemos ajudar?"/>
+        </div>
+        <button type="button" className="btn-primary w-full">Enviar</button>
+      </form>
+      
     </>
   );
 }
